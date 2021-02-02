@@ -1,0 +1,312 @@
+
+/* preloader */
+#preloader {
+    position: fixed;
+    top:0; left:0;
+    right:0; bottom:0;
+    background: #ffffff;
+    z-index: 10000;
+}
+
+#loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:50%; top:50%;
+    margin:-50px 0 0 -50px;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #eeeeee;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+nav {
+    background-color: #3cf436;
+}
+
+.page-footer {
+    background-color: #565656;
+    bottom: 0;
+}
+
+.footer-copyright {
+    overflow: hidden;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    color: rgba(255,255,255,0.8);
+    background-color: rgb(86, 86, 86);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+}
+
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 40px;
+    height: 150px;
+    color: white;
+    /*text-shadow: black 0.3em 0.3em 0.3em;*/
+    background:transparent;
+}
+
+.bg {
+    background: url('../../../materialize/img/math-h.jpg') repeat left;
+    width: 100%;
+    height: 150px; /*same height as jumbotron */
+}
+
+.layer {
+    background-color: rgba(16, 16, 16, 0.64);
+}
+
+.section-cards {
+    padding-top: 20px;
+}
+
+
+#sidenav-overlay {
+    z-index: 996;
+}
+
+.highlighted {
+    color: white;
+    background-color: rgba(0,0,0,.5);
+}
+
+.card-size-index{
+    margin-bottom: 20px;
+    height: 270px;
+}
+
+.tap-target {
+    background-color: rgb(255, 255, 255);
+}
+
+.tabs .tab a.active {
+    color: #3cf436;
+}
+
+.tabs .indicator {
+    background-color: #3cf436;
+}
+
+.tabs .tab a {
+    color: rgba(91, 243, 31, 0.82);
+}
+
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+    padding: 0 30px;
+}
+
+#button-mcm {
+    padding-top: 20px;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #3cf436;
+    -webkit-box-shadow: 0 1px 0 0 #3cf436;
+    box-shadow: 0 1px 0 0 #3cf436;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: rgba(47, 197, 47, 0.95);
+}
+
+.btn, .btn-large {
+    background-color: #3cf436;
+}
+
+
+.btn:focus, .btn-large:focus, .btn-floating:focus {
+    background-color: #3cf436;
+}
+
+button:focus {
+    outline: none;
+    background-color: rgba(86, 244, 54, 0.87);
+}
+
+.btn, .btn-large {
+    background-color: #3cf436;
+}
+
+.input-field .prefix.active {
+    color: #3cf436;
+}
+
+
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #3cf436;
+}
+
+
+.embed-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+.diesiseisby9 {
+    padding-bottom: 56.25%;
+}
+.cuatroby3 {
+    padding-bottom: 75%;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.chart {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.chart iframe{
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* CSS pantallas de 320px o superior */
+/* CSS pantallas de 320px o superior */
+@media only screen and (max-width: 992px){
+    .modal {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .modal {
+        width: 90%;
+    }
+}
+
+.modal .modal-content {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tabs .tab.disabled a, .tabs .tab.disabled a:hover {
+    color: rgba(68, 68, 68, 0.46);
+    cursor: default;
+}
+
+
+
+.btn-flat-nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #343434;
+    cursor: pointer;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+.btn-flat-nav {
+    font-size: 1rem;
+    outline: 0;
+}
+
+
+.btn-flat-nav {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-flat-nav:focus {
+    background-color: rgba(0,0,0,0.0);
+}
+
+.btn-flat-nav:focus, .btn-flat:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.dropdown-content-nav {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 164px; /* Changed this to accomodate content width */
+  max-height: auto;
+  margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+}
+
+.carousel.carousel-slider-nav {
+    top: 0;
+    left: 0;
+    height: 350px;
+}
+
+.modal-content-pre {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.modal-content-pre {
+    padding: 0px;
+}
+
+
+#img-pre {
+    width: 40%;
+    height: auto;
+}
